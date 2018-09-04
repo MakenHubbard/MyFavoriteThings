@@ -24,6 +24,19 @@ namespace MyFavoriteThings.FavoriteThings
                 Console.WriteLine("you are gross");
             }
 
+            int howMany = 1;
+            Console.WriteLine("how many beers would you say you drink on average?");
+            howMany = Convert.ToInt32(Console.ReadLine());
+
+            if (howMany > 3)
+            {
+                Console.WriteLine($"{howMany}! Alright you alcoholic!");
+            }
+            else
+            {
+                Console.WriteLine($"Only {howMany}!?! Pussay!!!!");
+            }
+
         }
 
     }

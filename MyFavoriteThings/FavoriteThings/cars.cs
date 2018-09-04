@@ -12,7 +12,7 @@ namespace MyFavoriteThings.FavoriteThings
 
         public void modelOfCar ()
         {
-            Console.WriteLine("What id your favorite model of car?");
+            Console.WriteLine("What is your favorite model of car?");
             model = Console.ReadLine();
 
             if (model == "")
@@ -21,7 +21,24 @@ namespace MyFavoriteThings.FavoriteThings
             }
             else
             {
-                Console.WriteLine($@"{model} is a really cool Kar");
+                Console.WriteLine($@" a {model}!!!??? Really???");
+            }
+
+            var make = "";
+            Console.WriteLine($"What make of {model} do you like best");
+            make = Console.ReadLine();
+            
+            if (model == "ford")
+            {
+                Console.WriteLine("Some people would call you queer for that.");
+            }
+            else if ( model == "chevy")
+            {
+                Console.WriteLine("Ewww I know ford lovers that would think that was dumb");
+            }
+            else
+            {
+                Console.WriteLine($"Having a {model} {make} would be pretty cool I guess...");
             }
         }
     }
