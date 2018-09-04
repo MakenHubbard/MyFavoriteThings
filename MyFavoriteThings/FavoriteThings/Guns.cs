@@ -31,6 +31,11 @@ namespace MyFavoriteThings.FavoriteThings
             {
                 Console.WriteLine("hell yeah no guns are cool too");
             }
+
+            var calliber = "";
+            Console.WriteLine($"What calliber would you prefer to shoot out of that {typeOfGun}?");
+            calliber = Console.ReadLine();
+            Console.WriteLine($"You are Shooting a {typeOfGun} with a {calliber} calliber bullet at the target.");
         }
     }
 }
