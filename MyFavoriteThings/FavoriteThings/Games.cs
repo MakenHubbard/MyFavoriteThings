@@ -14,7 +14,7 @@ namespace MyFavoriteThings.FavoriteThings
         {
             Console.WriteLine("Out of the Following Video Games Which one is your favorite");
             Console.WriteLine("Red Dead, D2, FallOut 76, Last Of Us 2");
-            whatNewVideoGame = Console.ReadLine();
+            whatNewVideoGame = Console.ReadLine().ToLower();
 
             if (whatNewVideoGame == "Red Dead")
             {

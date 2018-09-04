@@ -13,7 +13,7 @@ namespace MyFavoriteThings.FavoriteThings
         public void whatKind ()
         {
             Console.WriteLine("Would you choose a pistol, assault rifle, or an RPG to target shoot with?");
-            typeOfGun = Console.ReadLine();
+            typeOfGun = Console.ReadLine().ToLower();
 
             if(typeOfGun == "pistol")
             {
@@ -34,7 +34,7 @@ namespace MyFavoriteThings.FavoriteThings
 
             var calliber = "";
             Console.WriteLine($"What calliber would you prefer to shoot out of that {typeOfGun}?");
-            calliber = Console.ReadLine();
+            calliber = Console.ReadLine().ToLower();
             Console.WriteLine($"You are Shooting a {typeOfGun} with a {calliber} calliber bullet at the target.");
         }
     }

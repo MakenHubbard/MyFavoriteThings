@@ -13,7 +13,7 @@ namespace MyFavoriteThings.FavoriteThings
         public void whatType()
         {
             Console.WriteLine("what type of beer is your favorite?");
-            typeOfBeer = Console.ReadLine();
+            typeOfBeer = Console.ReadLine().ToLower();
 
             if (typeOfBeer.ToLower() == "pale ale")
             {
